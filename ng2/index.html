@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="githubUsers">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+    <script src="app.js"></script>
+    <script src="services/githubService.js"></script>
+    <script src="filters/githubServiceResponseFilter.js"></script>
+    <script src="controllers/mainController.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+
+    Filter by login <input type="text" ng-model="loginFilter"></input><br/>
+
+    <div ng-repeat="user in users">Login: {{user.login}}</div>
+
+<!--     Name: <input type="text" ng-model="name"></input><br/>
+    Post: <input type="text" ng-model="post"></input><br/>
+    City: <input type="text" ng-model="city"></input><br/>
+    <button ng-click="onClickSubmit()">Zaherachit</button>
+    
+    <table border="1">
+        <tr><th>Name</th><th>Post</th><th>City</th></tr>
+        <plodi  ng-repeat="item in items"></plodi>
+
+      
+      <tr ng-repeat="item in items"><td>{{item.name}}</td><td>{{item.post}}</td><td>{{item.city}}</td></tr>
+    </table>
+ -->  
+ </body>
+
+</html>

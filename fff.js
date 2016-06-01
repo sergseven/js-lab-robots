@@ -1,4 +1,4 @@
-var RobotApiModule = function fooFunc(varA, varB) {
+var RobotApiModule = function RobotApiModule(mapModule) {
 	var Direction = {
 		RIGHT : {
 			toString : function() {
